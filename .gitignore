@@ -1,0 +1,12 @@
+*.cache/
+*.hw/
+*ip_user_files/
+*.runs/
+*sim/
+reaction_timer_testbench
+seg_digit_test/*.cache/
+seg_digit_test/*.hw/
+seg_digit_test/*ip_user_files/
+seg_digit_test/*sim/
+*.docx
+*.xlsx
