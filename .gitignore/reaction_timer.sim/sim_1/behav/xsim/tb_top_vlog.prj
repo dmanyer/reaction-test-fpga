@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "D:/vivado/2025.2/Vivado/data/rsb/busdef" \
+"../../../../reaction_timer.srcs/sources_1/new/clk_div.v" \
+"../../../../reaction_timer.srcs/sources_1/new/debounce.v" \
+"../../../../reaction_timer.srcs/sources_1/new/double_dabble.v" \
+"../../../../reaction_timer.srcs/sources_1/new/fsm.v" \
+"../../../../reaction_timer.srcs/sources_1/new/lsfr.v" \
+"../../../../reaction_timer.srcs/sources_1/new/result_calc.v" \
+"../../../../reaction_timer.srcs/sources_1/new/seg7_driver.v" \
+"../../../../reaction_timer.srcs/sources_1/new/timer.v" \
+"../../../../reaction_timer.srcs/sources_1/new/top.v" \
+"../../../../reaction_timer.srcs/sim_1/new/tb_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

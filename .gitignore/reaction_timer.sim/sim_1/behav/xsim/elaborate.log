@@ -1,0 +1,33 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/vivado/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/FDUdata/ASCI/reaction_timer/reaction_timer.srcs/sources_1/new/top.v" Line 2. Module top(CLK_DIVIDER=10,DEBOUNCE_COUNT=4) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/FDUdata/ASCI/reaction_timer/reaction_timer.srcs/sources_1/new/clk_div.v" Line 1. Module clk_div(DIVIDER=10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/FDUdata/ASCI/reaction_timer/reaction_timer.srcs/sources_1/new/debounce.v" Line 4. Module debounce(STABLE_COUNT=4) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/FDUdata/ASCI/reaction_timer/reaction_timer.srcs/sources_1/new/debounce.v" Line 4. Module debounce(STABLE_COUNT=4) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/FDUdata/ASCI/reaction_timer/reaction_timer.srcs/sources_1/new/lsfr.v" Line 6. Module lfsr doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/FDUdata/ASCI/reaction_timer/reaction_timer.srcs/sources_1/new/timer.v" Line 7. Module timer doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/FDUdata/ASCI/reaction_timer/reaction_timer.srcs/sources_1/new/fsm.v" Line 6. Module fsm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/FDUdata/ASCI/reaction_timer/reaction_timer.srcs/sources_1/new/result_calc.v" Line 1. Module result_calc doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/FDUdata/ASCI/reaction_timer/reaction_timer.srcs/sources_1/new/seg7_driver.v" Line 2. Module seg7_driver doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/FDUdata/ASCI/reaction_timer/reaction_timer.srcs/sources_1/new/double_dabble.v" Line 4. Module double_dabble doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_div(DIVIDER=10)
+Compiling module xil_defaultlib.debounce(STABLE_COUNT=4)
+Compiling module xil_defaultlib.lfsr
+Compiling module xil_defaultlib.timer
+Compiling module xil_defaultlib.fsm
+Compiling module xil_defaultlib.result_calc
+Compiling module xil_defaultlib.double_dabble
+Compiling module xil_defaultlib.seg7_driver
+Compiling module xil_defaultlib.top(CLK_DIVIDER=10,DEBOUNCE_COUN...
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav

@@ -1,0 +1,9 @@
+Time resolution is 1 ps
+=== Top-level integration simulation begins ===
+After pressing START: disp_mode expected 0(----)
+Wait for the countdown to end, then enter REACTs
+SHOW: seg=0001000 an=0100
+AVG: seg=0111111 an=0001
+Return to IDLE: seg=0111111 an=0100
+Top-level integration simulation completed!
+$finish called at time : 84125 ns : File "E:/FDUdata/ASCI/reaction_timer/reaction_timer.srcs/sim_1/new/tb_top.v" Line 78
