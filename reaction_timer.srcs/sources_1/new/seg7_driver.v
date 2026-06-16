@@ -10,17 +10,21 @@ module seg7_driver (
 );
 
 // ---- 扫描计数器 ----
-reg [1:0] scan_cnt;
-reg [1:0] tick_div;   // tick 二分频
+localparam integer SCAN_DIV = 31250;
+
+reg [15:0] scan_div_cnt;
+reg [1:0]  scan_cnt;
 
 always @(posedge clk or negedge rst_n) begin
     if (!rst_n) begin
-        scan_cnt <= 0;
-        tick_div <= 0;
-    end else if (tick) begin
-        tick_div <= tick_div + 1;
-        if (tick_div == 2'd1) begin  // 每2个tick推进一位
-            scan_cnt <= scan_cnt + 1;
+        scan_div_cnt <= 16'd0;
+        scan_cnt     <= 2'd0;
+    end else begin
+        if (scan_div_cnt == SCAN_DIV - 1) begin
+            scan_div_cnt <= 16'd0;
+            scan_cnt     <= scan_cnt + 1'b1;
+        end else begin
+            scan_div_cnt <= scan_div_cnt + 1'b1;
         end
     end
 end
